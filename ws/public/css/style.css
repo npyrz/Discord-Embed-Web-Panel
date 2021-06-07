@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(77, 125, 165);
+}
+
+h1 {
+    font-family: "Times New Roman";
+    color: black;
+    text-align: center;
+    font-style: italic;
+}
+
+.button1 {
+    background-color: rgb(124, 170, 207);
+    color: black;
+    border: 3px solid black;
+    padding: 13px 45px;
+    cursor: pointer;
+    font-family: "Times New Roman";
+    font-style: italic;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.buttonSelectForm {
+    border: 7px solid rgb(55, 111, 156);
+    border-style: groove;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    width: 33%;
+    border-radius: 15px;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    border: 3px solid black;
+    background-color: rgb(124, 170, 207);
+    font-family: "Times New Roman";
+    height: 36px;
+    width: 220px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+select {
+    background-color: rgb(124, 170, 207);
+    color: black;
+    border: 3px solid black;
+    padding: 13px 23px;
+    cursor: pointer;
+    font-family: "Times New Roman";
+    font-style: italic;
+    text-align: center;
+    border-radius: 15px;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+    font-style: italic;
+}
+
+:-moz-placeholder {
+    color: black;
+    font-style: italic;
+}
+
+::-moz-placeholder {
+    color: black;
+    font-style: italic;
+}
+
+:-ms-input-placeholder {
+    color: black;
+    font-style: italic;
+}

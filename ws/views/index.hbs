@@ -1,0 +1,51 @@
+<h1> Discord Embed Web Panel </h1>
+<iframe style="display: none" name="main" id="main"></iframe>
+<form action="/sendMessage" method="POST" target="main">
+    <input type="hidden" name="token" value="{{ token }}" />
+    <div class="buttonSelectForm">
+        <input class="inputText" type="text" name="text" placeholder="Insert Embed Title" onfocus="this.value=''"
+            required>
+        <br>
+        <br>
+        <input class="inputText" type="text" name="text1" placeholder="Insert Embed Description" onfocus="this.value=''"
+            required>
+        &nbsp;&nbsp;&nbsp;
+         <input class="inputText" type="text" name="text2" placeholder="Insert Embed Hex Color" onfocus="this.value=''"
+            required>
+        <br>
+        <br>
+        <input class="inputText" type="text" name="text3" placeholder="Insert Emebed Image" onfocus="this.value=''"
+            required>
+        &nbsp;&nbsp;&nbsp;
+        <input class="inputText" type="text" name="text4" placeholder="Insert Embed Author" onfocus="this.value=''"
+            required>
+        <br>
+        <br>
+        <input class="inputText" type="text" name="text5" placeholder="Insert Embed Thumbnail" onfocus="this.value=''"
+            required>
+        &nbsp;&nbsp;&nbsp;
+        <input class="inputText" type="text" name="text6" placeholder="Insert Embed Footer" onfocus="this.value=''"
+            required>
+        <br>
+        <br>
+        <input class="inputText" type="text" name="text7" placeholder="Insert Embed URL" onfocus="this.value=''"
+            required>
+        <br>
+        <br>
+        <select name="channelid">
+            <option disabled selected value>Select Channel</option>
+            {{#each chans}}
+            <option value="{{this.id}}">{{this.name}}</option>
+            {{/each}}
+        </select>
+        &nbsp;&nbsp;&nbsp;
+        <button class="button1" onclick="inputReset()">Send Embed</button>
+</form>
+</div>
+<script>
+    function inputReset() {
+        setTimeout(function () {
+            location.reload();
+        }, 500);
+    }
+</script>
